@@ -44,7 +44,7 @@ bool test_case_1()
     string result = miniMaxSum(arr);
 
     cout << "Result: " << result << endl;
-    cout << "Expected: " << result << endl;
+    cout << "Expected: " << expected << endl;
 
     return result.compare(expected) == 0;
 }
@@ -58,7 +58,7 @@ bool test_case_2()
     string result = miniMaxSum(arr);
 
     cout << "Result: " << result << endl;
-    cout << "Expected: " << result << endl;
+    cout << "Expected: " << expected << endl;
 
     return result.compare(expected) == 0;
 }
