@@ -2,10 +2,6 @@
 
 using namespace std;
 
-bool isInHouseRange(int d)
-{
-}
-
 vector<int> breakingRecords(vector<int> scores)
 {
     int max = scores.front();
