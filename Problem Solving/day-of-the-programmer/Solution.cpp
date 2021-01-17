@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-
-using namespace std;
+#include "SolutionHeader.h"
 
 pair<int, int> compute(vector<int> map)
 {
@@ -99,86 +97,4 @@ string dayOfProgrammer(int year)
     resultfmt << daysDisplay << "." << monthDisplay << "." << yearDisplay;
 
     return resultfmt.str();
-}
-
-bool test_case_1()
-{
-    int y = 2017;
-    string expected = "13.09.2017";
-
-    string result = dayOfProgrammer(y);
-
-    cout << "Result: " << result << endl;
-    cout << "Expected: " << expected << endl;
-
-    return result.compare(expected) == 0;
-}
-
-bool test_case_2()
-{
-    int y = 2016;
-    string expected = "12.09.2016";
-
-    string result = dayOfProgrammer(y);
-
-    cout << "Result: " << result << endl;
-    cout << "Expected: " << expected << endl;
-
-    return result.compare(expected) == 0;
-}
-
-bool test_case_3()
-{
-    int y = 1918;
-    string expected = "26.09.1918";
-
-    string result = dayOfProgrammer(y);
-
-    cout << "Result: " << result << endl;
-    cout << "Expected: " << expected << endl;
-
-    return result.compare(expected) == 0;
-}
-
-void runTestCases()
-{
-    // TODO pass as lambda function
-    if (test_case_1())
-    {
-        cout << "Test Case 1:  PASS\n\n";
-    }
-    else
-    {
-        cout << "Test Case 1:  FAIL\n\n";
-    }
-
-    if (test_case_2())
-    {
-        cout << "Test Case 2:  PASS\n\n";
-    }
-    else
-    {
-        cout << "Test Case 2:  FAIL\n\n";
-    }
-
-    if (test_case_3())
-    {
-        cout << "Test Case 2:  PASS\n\n";
-    }
-    else
-    {
-        cout << "Test Case 2:  FAIL\n\n";
-    }
-}
-
-void exitApp()
-{
-    cout << "\n\nPress Enter to Exit...";
-    cin.get();
-}
-
-int main()
-{
-    runTestCases();
-    exitApp();
 }
