@@ -21,11 +21,11 @@ void runTestCases()
     }
     if (testCase3())
     {
-        cout << "Test Case 2:  PASS\n\n";
+        cout << "Test Case 3:  PASS\n\n";
     }
     else
     {
-        cout << "Test Case 2:  FAIL\n\n";
+        cout << "Test Case 3:  FAIL\n\n";
     }
 }
 

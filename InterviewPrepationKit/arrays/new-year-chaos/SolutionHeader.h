@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void minimumBribes(vector<int> q);
+string minimumBribes(vector<int> q);
 
 bool testCase1();
 bool testCase2();

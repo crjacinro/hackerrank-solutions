@@ -45,28 +45,44 @@ void minimumBribesTest(vector<int> q)
     cout << endl;
 }
 
-void minimumBribes(vector<int> q)
+string minimumBribes(vector<int> q)
 {
     int total = 0;
+    string result = "Too chaotic";
+
+    int expectedFirst = 1;
+    int expectedSecond = 2;
+    int expectedThird = 3;
 
     for (int i = 0; i < q.size(); i++)
     {
-        int value = q[i];
-        int diff = (value) - (i + 1);
-
-        if (diff > 0)
+        if (q[i] == expectedFirst)
         {
-            total += diff;
+            expectedFirst = expectedSecond;
+            expectedSecond = expectedThird;
+            expectedThird++;
         }
-
-        cout << q[i] << ": " << diff << endl;
-
-        if (diff > 2)
+        else if (q[i] == expectedSecond)
         {
-            cout << "Too chaotic" << endl;
-            return;
+            total++;
+            expectedSecond = expectedThird;
+            expectedThird++;
+        }
+        else if (q[i] == expectedThird)
+        {
+            total += 2;
+            expectedThird++;
+        }
+        else
+        {
+            cout << result << endl;
+            return result;
         }
     }
 
-    cout << total << endl;
+    result = to_string(total);
+
+    cout << result << endl;
+
+    return result;
 }
