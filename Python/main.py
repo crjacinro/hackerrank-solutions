@@ -1,4 +1,4 @@
-from problems.listComprehension import permutation
+from problems.runnerUp import runnerUp
 
 if __name__ == '__main__':
-    permutation(1, 1, 1, 2)
+    print(runnerUp([99, 3, 33, 124]))
